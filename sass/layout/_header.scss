@@ -1,0 +1,101 @@
+.border-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &-list {
+    display: flex;
+    margin-left: 92px;
+  }
+
+  &-list-item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &-list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include font-style(
+      $main-font,
+      500,
+      $font-size-text,
+      16px,
+      0.02em,
+      $title-color
+    );
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.current {
+  padding-bottom: 0;
+  color: $accent-color;
+  &::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font-style(
+      $main-font,
+      500,
+      14px,
+      16px,
+      0.02em,
+      $primary-text-color
+    );
+
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &-icon-mail,
+  &-icon-phone {
+    margin-right: 10px;
+    fill: $primary-text-color;
+    transition: fill 250ms $timing-function;
+  }
+
+  &-phone {
+    margin-left: 50px;
+  }
+
+  &-link:hover &-icon-mail,
+  &-link:focus &-icon-mail,
+  &-link:hover &-icon-phone,
+  &-link:focus &-icon-phone {
+    fill: $accent-color;
+  }
+}
