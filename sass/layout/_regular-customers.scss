@@ -66,37 +66,3 @@
     }
   }
 }
-
-/* .customers-list {
-  display: flex;
-
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 90px;
-    border: 1px solid $icon-fill;
-    border-radius: 4px;
-    transition: border-color 250ms $timing-function;
-
-    &:hover,
-    &:focus {
-      border-color: $accent-color;
-    }
-  }
-}
-
-.customers-svg {
-  fill: $icon-fill;
-  transition: fill 250ms $timing-function;
-
-  .customers-list-link:hover &,
-  .customers-list-link:focus & {
-    fill: $accent-color;
-  }
-} */
